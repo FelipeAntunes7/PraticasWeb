@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog do CJ</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        /* Reset CSS */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Estilos gerais */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            color: #333;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #343a40;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 28px;
+            margin: 0;
+        }
+
+        nav {
+            background-color: #444;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        nav button {
+            color: #fff;
+            background-color: transparent;
+            border: none;
+            padding: 10px 20px;
+            margin: 0 10px;
+            border-radius: 4px;
+            transition: background-color 0.3s;
+            cursor: pointer;
+        }
+
+        nav button:hover {
+            background-color: #555;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 20px auto;
+            padding: 0 20px;
+        }
+
+        .content {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            margin-bottom: 20px;
+            display: none; /* Esconde todas as abas por padrão */
+        }
+
+        .content.active {
+            display: block; /* Exibe a aba ativa */
+        }
+
+        .content h2 {
+            color: #333;
+            margin-top: 0;
+            cursor: pointer; /* Adiciona cursor de apontar para indicar que é clicável */
+            padding: 10px 0; /* Adiciona espaço interno para melhorar a aparência */
+        }
+
+        .content h2:hover {
+            background-color: #f0f0f0; /* Adiciona cor de fundo ao passar o mouse */
+        }
+
+        .content p {
+            color: #555;
+            margin-bottom: 20px;
+        }
+
+        footer {
+            background-color: #343a40;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+        /* Estilos específicos para o formulário */
+        #opiniaoForm {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        #opiniaoForm label {
+            margin-right: 10px;
+        }
+
+        #opiniaoForm button {
+            margin-top: 10px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        #opiniaoForm button:hover {
+            background-color: #0056b3;
+        }
+
+        #mensagem {
+            margin-top: 10px;
+            display: none;
+            color: green;
+        }
+
+        /* Estilos responsivos */
+        @media screen and (max-width: 768px) {
+            header h1 {
+                font-size: 24px;
+            }
+            nav {
+                padding: 10px 0;
+            }
+            nav button {
+                padding: 10px 15px;
+                margin: 0 5px;
+            }
+            .container {
+                padding: 0 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Blog do CJ</h1>
+</header>
+
+<nav>
+    <button onclick="showContent('paginaPrincipal')" class="active">Página Principal</button>
+    <button onclick="showContent('sobre')">Sobre</button>
+    <button onclick="showContent('contato')">Contato</button>
+</nav>
+
+<div class="container">
+    <div id="paginaPrincipal" class="content active">
+        <h2>Carl "CJ" Johnson</h2>
+        <img src="CJ.png" alt="Carl 'CJ' Johnson">
+        <p>Nascido e criado nas ruas turbulentas de Los Santos, Carl "CJ" Johnson é uma lenda urbana em carne e osso. Conhecido por sua habilidade incomparável ao volante e sua determinação inabalável, CJ é mais do que apenas um ex-gangster - ele é um símbolo de resiliência e redenção.</p>
+        <p>Após anos de exílio autoimposto, CJ retorna à sua cidade natal com um único propósito: reivindicar o que é seu por direito e proteger aqueles que ama. Sua jornada é uma saga de altos e baixos, uma dança perigosa entre o caos das ruas e a busca pela redenção pessoal.</p>
+        <p>Através de sua determinação inquebrável e sua lealdade inabalável à família, CJ enfrenta os desafios mais sombrios de Los Santos, desafiando a corrupção que se enraizou nas entranhas da cidade. Com cada reviravolta do destino, ele prova que, mesmo nas ruas mais difíceis, o verdadeiro poder reside na força do coração.</p>
+
+        <h2>História de Los Santos</h2>
+        
+<img src=LOSSANTOS.jpg>
+
+<p>Los Santos é apresentada como uma cidade dominada por gangues e corrupção, onde o protagonista, Carl "CJ" Johnson, retorna após a morte de sua mãe. CJ é arrastado de volta para o mundo do crime e da violência das ruas quando sua família é ameaçada por outras gangues.
+
+Ao longo do jogo, CJ se envolve em uma série de missões e atividades, incluindo assaltos a banco, tiroteios e disputas territoriais com gangues rivais. Ele também forma alianças com outros personagens, como a policial Tenpenny e o empresário Woozie, para alcançar seus objetivos.
+
+A história explora temas de lealdade, traição e redenção, à medida que CJ luta para proteger sua família e restaurar o domínio de sua gangue, a Grove Street Families, sobre Los Santos. Ele enfrenta desafios internos e externos, lidando com a traição de antigos amigos e a interferência de forças corruptas dentro da polícia e do governo.
+
+Ao longo de sua jornada, CJ encontra personagens diversos e coloridos que representam diferentes aspectos da vida em Los Santos, desde gangsters implacáveis até empresários corruptos. Ele também explora os diversos bairros da cidade, cada um com sua própria cultura e problemas únicos.
+
+No final, CJ emerge como um líder respeitado e poderoso em Los Santos, restaurando a ordem e a estabilidade em sua comunidade. Sua jornada é uma saga de redenção pessoal e resiliência, mostrando que, mesmo nas ruas mais difíceis, é possível encontrar esperança e mudança.</p>
+
+ <h2>Personagens Principais</h2>
+        <p>Além de Carl "CJ" Johnson, o protagonista principal, diversos outros personagens desempenham papéis importantes na história de Los Santos:</p>
+        <ul>
+ 
+<img src=BigSmoke.jpg>           
+
+<li><strong>Big Smoke:
+
+</strong> 
+
+Big Smoke, também conhecido como Melvin Harris, é um personagem fictício do jogo Grand Theft Auto: San Andreas. Ele é um dos membros mais antigos e influentes da gangue Grove Street Families, liderada pelo protagonista Carl "CJ" Johnson.
+
+Big Smoke é retratado como um indivíduo corpulento e astuto, conhecido por sua inteligência e habilidade em lidar com situações complicadas. Inicialmente, ele é apresentado como um aliado confiável de CJ, desempenhando o papel de conselheiro e mentor dentro da gangue.
+
+No entanto, ao longo da história, torna-se evidente que Big Smoke se envolveu em atividades criminosas por trás das costas de CJ. Ele eventualmente trai a gangue Grove Street Families, formando uma aliança com gangues rivais e se tornando um importante membro de uma organização criminosa maior.
+
+A traição de Big Smoke é um dos principais pontos de virada na trama de Grand Theft Auto: San Andreas, levando a uma série de confrontos entre CJ e seus antigos aliados. Sua história é marcada por ambição desmedida, ganância e traição, tornando-o um dos antagonistas mais memoráveis da série GTA.</li>
+            
+            
+<img src=Ryder.jpg>
+
+<li><strong>Ryder: 
+
+</strong> 
+
+Ryder é outro membro importante da Grove Street Families em Grand Theft Auto: San Andreas. Ele é retratado como um amigo próximo de CJ e Big Smoke, conhecido por sua personalidade excêntrica e seu senso de humor sarcástico.
+
+Assim como Big Smoke, Ryder inicialmente parece ser um aliado leal de CJ, lutando ao seu lado para proteger o território da gangue e manter sua influência em Los Santos. No entanto, ao longo do jogo, torna-se evidente que Ryder também está envolvido em atividades criminosas separadas, frequentemente agindo de forma impulsiva e imprudente.
+
+Ryder é retratado como alguém que se deixa levar pelas tentações do dinheiro e do poder, muitas vezes colocando seus próprios interesses acima dos da gangue. Sua traição e deslealdade eventualmente se tornam um dos principais obstáculos para CJ e a estabilidade da Grove Street Families.</li>
+        
+</ul>
+
+
+
+<img src=Sweet.jpg>
+   
+<li><strong> Sweet: 
+
+    
+</strong> 
+  Sweet, cujo nome verdadeiro é Sean Johnson, é o irmão mais velho de Carl "CJ" Johnson e um dos principais líderes da gangue Grove Street Families. Ao contrário de Big Smoke e Ryder, Sweet é retratado como um personagem mais centrado e comprometido com os princípios da gangue.
+
+Desde o início do jogo, Sweet assume um papel de liderança na Grove Street, trabalhando para manter a unidade da gangue e proteger seu território contra gangues rivais. Ele valoriza os laços familiares e a lealdade acima de tudo, e muitas vezes expressa preocupação com o bem-estar de CJ e de sua família.
+
+Embora inicialmente relutante em aceitar CJ de volta à gangue após seu retorno a Los Santos, Sweet eventualmente reconhece o valor de seu irmão como membro da Grove Street. Sua relação complexa com CJ é um dos principais temas do enredo de Grand Theft Auto: San Andreas, com Sweet representando a busca pela redenção e a preservação dos laços familiares em um ambiente de violência e corrupção.</li>      
+
+</ul>
+
+
+
+        <h2>Curtiu o conteúdo do nosso querido CJ?</h2>
+        <form id="opiniaoForm" onsubmit="submitForm(event)">
+            <input type="radio" id="sim" name="opiniao" value="Sim">
+            <label for="sim">SIM</label>
+            <input type="radio" id="melhorar" name="opiniao" value="Pode melhorar">
+            <label for="melhorar">PODE MELHORAR</label>
+            <input type="radio" id="nao" name="opiniao" value="Não">
+            <label for="nao">NÃO</label>
+            <button type="submit">Enviar <i class="fas fa-paper-plane"></i></button>
+        </form>
+        <div id="mensagem"></div>
+    </div>
+
+    <div id="sobre" class="content">
+        <h2>Sobre</h2>
+        <p>O Blog do CJ é dedicado a compartilhar histórias e experiências de um dos maiores ícones de Los Santos, Carl "CJ" Johnson. Aqui você encontrará artigos emocionantes sobre suas aventuras, entrevistas exclusivas e muito mais.</p>
+    </div>
+
+    <div id="contato" class="content">
+        <h2>Contato</h2>
+        <p>Quer entrar em contato conosco? Envie um e-mail para felipeantunes.goncalves@gmail.com ou siga-nos no Instagram: <a href="https://www.instagram.com/antunesz79">@antunesz79</a></p>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2024 Blog do CJ. Todos os direitos reservados.</p>
+</footer>
+
+<script>
+    function showContent(id) {
+        // Oculta todos os elementos com a classe "content"
+        var contents = document.querySelectorAll('.content');
+        contents.forEach(function(content) {
+            content.classList.remove('active');
+        });
+        
+        // Exibe o elemento com o ID correspondente ao da aba selecionada
+        document.getElementById(id).classList.add('active');
+    }
+
+    function submitForm(event) {
+        event.preventDefault();
+        var mensagem = document.getElementById('mensagem');
+        mensagem.innerHTML = 'Obrigado pelo seu feedback!';
+        mensagem.style.display = 'block';
+    }
+</script>
+
+</body>
+</html> 
+
+       
+
+
+            
+
+    
+
+
+
+
+
+
+
